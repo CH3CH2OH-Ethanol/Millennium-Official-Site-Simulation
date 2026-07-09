@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuuka Hayasa - Millennium Student Archive</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="school">MILLENNIUM SCIENCE SCHOOL · SECURE ARCHIVE NODE</div>
+        <div class="system-title">GUEST PASS</div>
+      </div>
+
+      <div class="status">
+        <span class="dot"></span>
+        GUEST AUTHORIZED
+      </div>
+    </header>
+
+    <section class="main">
+      <aside class="id-card">
+        <div class="name" id="name">GUEST</div>
+
+        <div class="badge-row">
+          <div class="badge">GUEST</div>
+        </div>
+      </aside>
+
+      <section class="right">
+        <section class="data-panel">
+          <div class="section-title">HOST</div>
+
+          <div class="grid">
+            <div class="field">
+              <div class="label">HOSTED BY</div>
+              <div class="value">HAYASE YUUKA</div>
+            </div>
+
+            <div class="field">
+              <div class="label">ORGANIZATION</div>
+              <div class="value">SEMINAR</div>
+            </div>
+
+            <div class="field">
+              <div class="label">ROLE</div>
+              <div class="value">TREASURER</div>
+            </div>
+
+            <div class="field">
+              <div class="label">DISPLAY ID</div>
+              <div class="value small">MSS-SE-0314-YUUKA</div>
+            </div>
+
+            <div class="field">
+              <div class="label">INTERNAL UID</div>
+              <div class="value small"><span class="redacted"></span></div>
+            </div>
+
+            <div class="field">
+              <div class="label">ACCESS LEVEL</div>
+              <div class="value">SEMINAR / FINANCE</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="data-panel">
+            <div class="section-title">STATUS</div>
+
+            <div class="grid">
+                <div class="field">
+                <div class="label">DATE</div>
+                <div class="value">07 / 10 / 2026</div>
+                </div>
+                <div class="field">
+                <div class="label">CARD STATUS</div>
+                <div class="value" style="color: var(--ok);">ACTIVE</div>
+                </div>
+            </div>
+            </section>
+
+        <section class="note-panel">
+          <strong>NOTICE:</strong>
+          This profile is displayed for authorized review only.
+          Public-facing identifiers are not database primary keys.
+          Internal student UID, access token, and audit trail are hidden from badge-level output.
+        </section>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span>ARCHIVE TERMINAL · MSS-SEMINAR-GUEST</span>
+      <span>LAST SYNC: 07/10</span>
+    </footer>
+  </main>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    const name = params.get("name");
+
+    if (name) {
+        document.getElementById("name").textContent = name;
+    }
+</script>
+
+</body>
+</html>
