@@ -169,6 +169,12 @@ body::before {
     opacity: 0.85;
 }
 
+.portrait.locked span {
+  font-size: 34px;
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+}
+
 .name {
     margin-top: 16px;
     font-size: 28px;
